@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sabdkosh</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_search_text">Search</string>
+    <string name="lbl_to">To</string>
+    <string name="lbl_from">From</string>
+    <string name="lbl_search">Word</string>
+    
+</resources>

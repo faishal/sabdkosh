@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56C2C2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+            <Spinner
+            android:id="@+id/spnOutputType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spnInputType"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spnInputType" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spnOutputType"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/lblFrom"
+            android:layout_below="@+id/spnInputType"
+            android:layout_marginLeft="2dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/lbl_to"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spnOutputType"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spnOutputType" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <Spinner
+            android:id="@+id/spnInputType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/lblFrom" />
+
+        <TextView
+            android:id="@+id/lblFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="53dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/lbl_from"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actSearch"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:shadowColor="#696969"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:text="@string/btn_search_text"
+            android:textColor="#F60" />
+
+        <TextView
+            android:id="@+id/lblSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/actSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignTop="@+id/actSearch"
+            android:gravity="right|center_vertical"
+            android:text="@string/lbl_search"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF" />
+
+</RelativeLayout>
